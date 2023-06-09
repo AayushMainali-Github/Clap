@@ -65,7 +65,7 @@ textarea {
   gap: 20px;
 }
 #docsHead {
-  font-size: 25px;
+  font-size: 35px;
   font-weight: bold;
   color: rgb(101, 255, 152);
 }
@@ -91,6 +91,7 @@ th {
 }
 b {
   color: rgb(101, 255, 152);
+  font-size: 18px;
 }
 .codeDes {
   font-family: Consolas, "courier new";
@@ -109,7 +110,11 @@ b {
 }
 .chngVer {
   margin-bottom: 10px;
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
   color: rgb(101, 255, 152);
+}
+
+li {
+  font-size: 20px;
 }

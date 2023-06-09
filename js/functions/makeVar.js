@@ -3,6 +3,10 @@ import functions from "../functions.js";
 import memory from "../memory/variables.js";
 let makeVar = (code, i) => {
   let returnData = {};
+  let error = () => {
+    returnData.data = "\nAn error occured while running the function makeVar.";
+    returnData.jumpTo = code.length + 1;
+  };
   if (code[i + 7] == "(" && validLetters.includes(code[i + 8])) {
     for (let j = i + 9; j < code.length; j++) {
       if (code[j] == ",") {
@@ -13,8 +17,7 @@ let makeVar = (code, i) => {
               let varValue = code.slice(j + 2, k);
               let status = memory.addVariable(varName, varValue);
               if (status == 999) {
-                returnData.data = "\nAn error occured.";
-                returnData.jumpTo = code.length + 1;
+                error();
                 j = code.length + 1;
                 break;
               }
@@ -32,8 +35,7 @@ let makeVar = (code, i) => {
                 if (varValue.data.status && varValue.data.status == 100) {
                   let status = memory.addVariable(varName, varValue.data.data);
                   if (status == 999) {
-                    returnData.data = "\nAn error occured.";
-                    returnData.jumpTo = code.length + 1;
+                    error();
                     j = code.length + 1;
                     break;
                   }
@@ -42,19 +44,16 @@ let makeVar = (code, i) => {
                   j = code.length + 1;
                   break;
                 } else {
-                  returnData.data = varValue.data;
-                  returnData.jumpTo = code.length + 1;
+                  error();
                   j = code.length + 1;
                   break;
                 }
               } else {
-                returnData.data = "\nAn error occured.";
-                returnData.jumpTo = code.length + 1;
+                error();
               }
             }
           } else {
-            returnData.data = "\nAn error occured.";
-            returnData.jumpTo = code.length + 1;
+            error();
           }
         } else {
           for (let k = j + 1; k < code.length; k++) {
@@ -63,14 +62,12 @@ let makeVar = (code, i) => {
               try {
                 let status = memory.addVariable(varName, math.evaluate(varValue));
                 if (status == 999) {
-                  returnData.data = "\nAn error occured.";
-                  returnData.jumpTo = code.length + 1;
+                  error();
                   j = code.length + 1;
                   break;
                 }
               } catch (err) {
-                returnData.data = "\nAn error occured.";
-                returnData.jumpTo = code.length + 1;
+                error();
                 j = code.length + 1;
                 break;
               }
@@ -82,17 +79,14 @@ let makeVar = (code, i) => {
           }
         }
       } else if (!validLetters.includes(code[j])) {
-        returnData.data = "\nAn error occured.";
-        returnData.jumpTo = code.length + 1;
+        error();
         break;
       } else {
-        returnData.data = "\nAn error occured.";
-        returnData.jumpTo = code.length + 1;
+        error();
       }
     }
   } else {
-    returnData.data = "\nAn error occured.";
-    returnData.jumpTo = code.length + 1;
+    error();
   }
 
   return returnData;

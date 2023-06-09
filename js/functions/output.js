@@ -2,6 +2,10 @@ import functions from "../functions.js";
 
 let output = (code, i) => {
   let returnData = {};
+  let error = () => {
+    returnData.data = "\nAn error occured while running the function output.";
+    returnData.jumpTo = code.length + 1;
+  };
   if (code[i + 6] == "(") {
     //string
     if (code[i + 7] == '"') {
@@ -11,8 +15,7 @@ let output = (code, i) => {
           returnData.jumpTo = j + 2;
           break;
         } else {
-          returnData.data = "\nAn error occured.";
-          returnData.jumpTo = code.length + 1;
+          error();
         }
       }
     }
@@ -31,13 +34,11 @@ let output = (code, i) => {
             }
             break;
           } else {
-            returnData.data = "\nAn error occured.";
-            returnData.jumpTo = code.length + 1;
+            error();
           }
         }
       } else {
-        returnData.data = "\nAn error occured.";
-        returnData.jumpTo = code.length + 1;
+        error();
       }
     }
     //numbers or getVar
@@ -49,19 +50,16 @@ let output = (code, i) => {
             returnData.jumpTo = j + 1;
             break;
           } catch (err) {
-            returnData.data = "\nAn error occured.";
-            returnData.jumpTo = code.length + 1;
+            error();
             break;
           }
         } else {
-          returnData.data = "\nAn error occured.";
-          returnData.jumpTo = code.length + 1;
+          error();
         }
       }
     }
   } else {
-    returnData.data = "\nAn error occured.";
-    returnData.jumpTo = code.length + 1;
+    error();
   }
 
   return returnData;
