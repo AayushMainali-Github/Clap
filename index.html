@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.js"></script>
+    <title>Clap</title>
+  </head>
+  <body>
+    <!--  -->
+    <!-- navbar -->
+    <div id="navbar">
+      <div onclick="changeCode()" id="navCode" class="navitem">Code</div>
+      <div onclick="changeDocumentation()" id="navDocs" class="navitem">Documentation</div>
+      <div onclick="changeChangelog()" id="navChng" class="navitem">Changelog</div>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!-- code -->
+    <div id="code">
+      <button id="run">Run</button>
+      <div id="codeInpOut">
+        <div id="codeInput">
+          <div>Write code here:</div>
+          <textarea spellcheck="false" id="codeinp" cols="60" rows="33"></textarea>
+        </div>
+        <div id="codeOutput">
+          <div>Output here:</div>
+          <textarea id="codeout" readonly cols="60" rows="33"></textarea>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!-- documentation -->
+    <div id="documentation">
+      <div id="docsHead">Functions available:</div>
+      <table id="functions"></table>
+      <div id="docsHead">Examples:</div>
+      <div id="examples"></div>
+    </div>
+    <!--  -->
+    <!--  -->
+    <!-- chaneglog -->
+    <div id="changelog"></div>
+    <!--  -->
+    <!--  -->
+  </body>
+  <script src="js/main.js"></script>
+  <script type="module" src="js/runCode.js"></script>
+  <script src="js/documentation.js"></script>
+  <script src="js/changelog.js"></script>
+</html>
