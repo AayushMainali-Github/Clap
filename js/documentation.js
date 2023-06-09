@@ -7,9 +7,9 @@ let functions = [
   { name: "nVarDivide(variable1,variable2)", desc: "Divide 2 numerical variables and puts the value in the variable1" },
   { name: "nVarMultiply(variable1,variable2)", desc: "Multiply 2 numerical variables and puts the value in the variable1" },
   { name: "nVarSubtract(variable1,variable2)", desc: "Subtract 2 numerical variables and puts the value in the variable1" },
-  { name: "nVarSwap(variable1,variable2)", desc: "Swap 2 variables" },
   { name: "output(value)", desc: "Outputs any value inside." },
-  { name: "sVarAdd(variable1,variable2)", desc: "Concats 2 string variables and puts the value in the variable1" },
+  { name: "varConcat(variable1,variable2)", desc: "Concats 2 string variables and puts the value in the variable1" },
+  { name: "varSwap(variable1,variable2)", desc: "Swap 2 variables" },
   { name: "viewMemory( )", desc: "Outputs all the variables in the memory" },
 ];
 
@@ -17,7 +17,7 @@ let examples = [
   { title: "Outputs Hello World", code: 'output("Hello World");' },
   { title: "Creates 2 variables and outputs it", code: `makeVar(a,"Hello");\nmakeVar(b,"World");\noutput(getVar(a));\nchangeLine();\noutput(getVar(b));` },
   { title: "Adds two variables and displays it", code: "makeVar(a,7);\nmakeVar(b,9);\nnVarAdd(a,b);\noutput(getVar(a));" },
-  { title: "Concats two variables and displays it", code: 'makeVar(a,"Hello");\nmakeVar(b,"World");\nsVarAdd(a,b);\noutput(getVar(a));' },
+  { title: "Concats two variables and displays it", code: 'makeVar(a,"Hello");\nmakeVar(b,"World");\nvarConcat(a,b);\noutput(getVar(a));' },
 ];
 
 let funcHTML = "";

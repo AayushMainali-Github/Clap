@@ -89,6 +89,9 @@ th {
   flex-direction: column;
   gap: 30px;
 }
+b {
+  color: rgb(101, 255, 152);
+}
 .codeDes {
   font-family: Consolas, "courier new";
   color: rgb(248, 248, 248);
@@ -102,7 +105,7 @@ th {
   flex-direction: column;
   margin: 30px 70px;
   gap: 50px;
-  align-items: center;
+  align-items: flex-start;
 }
 .chngVer {
   margin-bottom: 10px;

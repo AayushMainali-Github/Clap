@@ -1,11 +1,11 @@
 import memory from "../memory/variables.js";
 
-let sVarAdd = (code, i) => {
+let varConcat = (code, i) => {
   let returnData = {};
-  if (code[i + 7] == "(") {
-    for (let j = i + 8; j < code.length; j++) {
+  if (code[i + 9] == "(") {
+    for (let j = i + 10; j < code.length; j++) {
       if (code[j] == ",") {
-        let var1name = code.slice(i + 8, j);
+        let var1name = code.slice(i + 10, j);
         let var1value = memory.getVariable(var1name);
         if (var1value.status == 999) {
           returnData.data = "\nAn error occured.";
@@ -46,4 +46,4 @@ let sVarAdd = (code, i) => {
   return returnData;
 };
 
-export default sVarAdd;
+export default varConcat;

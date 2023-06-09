@@ -2,10 +2,10 @@ import memory from "../memory/variables.js";
 
 let nVarSwap = (code, i) => {
   let returnData = {};
-  if (code[i + 8] == "(") {
-    for (let j = i + 9; j < code.length; j++) {
+  if (code[i + 7] == "(") {
+    for (let j = i + 8; j < code.length; j++) {
       if (code[j] == ",") {
-        let var1name = code.slice(i + 9, j);
+        let var1name = code.slice(i + 8, j);
         let var1value = memory.getVariable(var1name);
         if (var1value.status == 999) {
           returnData.data = "\nAn error occured.";

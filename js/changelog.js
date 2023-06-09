@@ -1,5 +1,14 @@
 let changelog = [
   {
+    version: "Version 0.0.2",
+    changes: [
+      "Changed function sVarAdd to varConcat",
+      "Changed function nVarSwap to varSwap",
+      "Fixed some css for the changelog page",
+      "Changed some minor css in the documentation page",
+    ],
+  },
+  {
     version: "Version 0.0.1",
     changes: [
       "Laid basic code base for the language",

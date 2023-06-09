@@ -6,9 +6,9 @@ import nVarAdd from "./functions/nVarAdd.js";
 import nVarDivide from "./functions/nVarDivide.js";
 import nVarMultiply from "./functions/nVarMultiply.js";
 import nVarSubtract from "./functions/nVarSubtract.js";
-import nVarSwap from "./functions/nVarSwap.js";
 import output from "./functions/output.js";
-import sVarAdd from "./functions/sVarAdd.js";
+import varConcat from "./functions/varConcat.js";
+import varSwap from "./functions/varSwap.js";
 import viewMemory from "./functions/viewMemory.js";
 
-export default { changeLine, clap, getVar, makeVar, nVarAdd, nVarDivide, nVarMultiply, nVarSubtract, nVarSwap, output, sVarAdd, viewMemory };
+export default { changeLine, clap, getVar, makeVar, nVarAdd, nVarDivide, nVarMultiply, nVarSubtract, output, varConcat, varSwap, viewMemory };
