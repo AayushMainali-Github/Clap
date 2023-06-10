@@ -82,12 +82,11 @@ textarea {
 table {
   table-layout: fixed;
   border-collapse: collapse;
-  border: 1px solid white;
 }
 td,
 th {
-  border: 1px solid white;
-  padding: 5px 15px;
+  border: 1px solid rgb(101, 255, 152);
+  padding: 10px 15px;
 }
 
 .fncnames {

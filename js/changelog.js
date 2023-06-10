@@ -1,5 +1,9 @@
 let changelog = [
   {
+    version: "Version 0.1.4",
+    changes: ["Added new function sVarLength.", "Added some more examples to the documentation page.", "Some CSS changes to the documentation page."],
+  },
+  {
     version: "Version 0.1.3",
     changes: ["Changed function viewMemory to viewVariables."],
   },

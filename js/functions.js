@@ -11,6 +11,7 @@ import nVarMultiply from "./functions/nVarMultiply.js";
 import nVarSubtract from "./functions/nVarSubtract.js";
 import output from "./functions/output.js";
 import sVarEqualsTo from "./functions/sVarEqualsTo.js";
+import sVarLength from "./functions/sVarLength.js";
 import sVarLowercase from "./functions/sVarLowercase.js";
 import sVarUppercase from "./functions/sVarUppercase.js";
 import varConcat from "./functions/varConcat.js";
@@ -31,6 +32,7 @@ export default {
   nVarSubtract,
   output,
   sVarEqualsTo,
+  sVarLength,
   sVarLowercase,
   sVarUppercase,
   varConcat,

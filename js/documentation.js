@@ -12,6 +12,7 @@ let functions = [
   { name: "nVarSubtract(variable1,variable2)", desc: "Subtract 2 numerical variables and puts the value in the variable1" },
   { name: "output(value)", desc: "Outputs any value inside." },
   { name: "sVarEqualsTo(variable1,variable2)", desc: "If two string variables are equal then variable1's value is set to 1 else variable1's value is set to 0" },
+  { name: "sVarLength(variable)", desc: "Changes the value of variable to its length" },
   { name: "sVarLowercase(variable)", desc: "Lowercases all the letters of the string" },
   { name: "sVarUppercase(variable)", desc: "Uppercases all the letters of the string" },
   { name: "varConcat(variable1,variable2)", desc: "Concats 2 string variables and puts the value in the variable1" },
@@ -24,6 +25,7 @@ let examples = [
   { title: "Creates 2 variables and outputs it", code: `makeVar(a,"Hello");\nmakeVar(b,"World");\noutput(getVar(a));\nchangeLine();\noutput(getVar(b));` },
   { title: "Adds two variables and displays it", code: "makeVar(a,7);\nmakeVar(b,9);\nnVarAdd(a,b);\noutput(getVar(a));" },
   { title: "Concats two variables and displays it", code: 'makeVar(a,"Hello");\nmakeVar(b,"World");\nvarConcat(a,b);\noutput(getVar(a));' },
+  { title: "Outputs the length of a string variable", code: 'makeVar(a,"Hello World");\nsVarLength(a);\noutput(getVar(a));' },
 ];
 
 let funcHTML = "";
