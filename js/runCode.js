@@ -18,6 +18,9 @@ let run = () => {
     else if (code.slice(i, i + 7) == "makeVar") data = functions.makeVar(code, i);
     else if (code.slice(i, i + 7) == "nVarAdd") data = functions.nVarAdd(code, i);
     else if (code.slice(i, i + 10) == "nVarDivide") data = functions.nVarDivide(code, i);
+    else if (code.slice(i, i + 12) == "nVarEqualsTo") data = functions.nVarEqualsTo(code, i);
+    else if (code.slice(i, i + 12) == "nVarLessThan") data = functions.nVarLessThan(code, i);
+    else if (code.slice(i, i + 12) == "nVarMoreThan") data = functions.nVarMoreThan(code, i);
     else if (code.slice(i, i + 12) == "nVarMultiply") data = functions.nVarMultiply(code, i);
     else if (code.slice(i, i + 12) == "nVarSubtract") data = functions.nVarSubtract(code, i);
     else if (code.slice(i, i + 6) == "output") data = functions.output(code, i);

@@ -1,5 +1,9 @@
 let changelog = [
   {
+    version: "Version 0.1.1",
+    changes: ["Added new function nVarEqualsTo.", "Added new function nVarLessThan.", "Added new function nVarMoreThan.", "Some changes to the changelog page."],
+  },
+  {
     version: "Version 0.1.0",
     changes: ["The site is responsive now."],
   },
@@ -28,7 +32,18 @@ let changelog = [
     version: "Version 0.0.1",
     changes: [
       "Laid basic code base for the language.",
-      "Added new functions : changeLine, clap, getVar, makeVar, nVarAdd, nVarDivide, nVarMultiply, nVarSubtract, nVarSwap, output, sVarAdd, viewMemory.",
+      "Added new function changeLine.",
+      "Added new function clap.",
+      "Added new function getVar",
+      "Added new function makeVar.",
+      "Added new function nVarAdd.",
+      "Added new function nVarDivide.",
+      "Added new function nVarMultiply.",
+      "Added new function nVarSubtract.",
+      "Added new function nVarSwap.",
+      "Added new function output.",
+      "Added new function sVarAdd.",
+      "Added new function viewMemory.",
       "Desgined a basic interface for the website.",
     ],
   },
