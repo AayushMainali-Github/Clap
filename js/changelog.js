@@ -1,5 +1,9 @@
 let changelog = [
   {
+    version: "Version 0.0.4",
+    changes: ["Added new function sVarLowercase.", "Added new function sVarUppercase.", "The scrollbar is now hidden."],
+  },
+  {
     version: "Version 0.0.3",
     changes: [
       "Changes to the error displaying system. Now it outputs which function had the error.",

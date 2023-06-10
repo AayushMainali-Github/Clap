@@ -8,6 +8,8 @@ let functions = [
   { name: "nVarMultiply(variable1,variable2)", desc: "Multiply 2 numerical variables and puts the value in the variable1" },
   { name: "nVarSubtract(variable1,variable2)", desc: "Subtract 2 numerical variables and puts the value in the variable1" },
   { name: "output(value)", desc: "Outputs any value inside." },
+  { name: "sVarLowercase(variable)", desc: "Lowercases all the letters of the string" },
+  { name: "sVarUppercase(variable)", desc: "Uppercases all the letters of the string" },
   { name: "varConcat(variable1,variable2)", desc: "Concats 2 string variables and puts the value in the variable1" },
   { name: "varSwap(variable1,variable2)", desc: "Swap 2 variables" },
   { name: "viewMemory( )", desc: "Outputs all the variables in the memory" },
