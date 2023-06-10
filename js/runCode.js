@@ -29,7 +29,7 @@ let run = () => {
     else if (code.slice(i, i + 13) == "sVarUppercase") data = functions.sVarUppercase(code, i);
     else if (code.slice(i, i + 9) == "varConcat") data = functions.varConcat(code, i);
     else if (code.slice(i, i + 7) == "varSwap") data = functions.varSwap(code, i);
-    else if (code.slice(i, i + 10) == "viewMemory") data = functions.viewMemory(code, i);
+    else if (code.slice(i, i + 13) == "viewVariables") data = functions.viewVariables(code, i);
 
     outputData += data.data;
     i = data.jumpTo;

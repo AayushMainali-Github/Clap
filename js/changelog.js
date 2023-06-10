@@ -1,5 +1,9 @@
 let changelog = [
   {
+    version: "Version 0.1.3",
+    changes: ["Changed function viewMemory to viewVariables."],
+  },
+  {
     version: "Version 0.1.2",
     changes: ["Added new function sVarEqualsTo."],
   },

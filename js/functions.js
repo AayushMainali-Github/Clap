@@ -15,7 +15,7 @@ import sVarLowercase from "./functions/sVarLowercase.js";
 import sVarUppercase from "./functions/sVarUppercase.js";
 import varConcat from "./functions/varConcat.js";
 import varSwap from "./functions/varSwap.js";
-import viewMemory from "./functions/viewMemory.js";
+import viewVariables from "./functions/viewVariables.js";
 
 export default {
   changeLine,
@@ -35,5 +35,5 @@ export default {
   sVarUppercase,
   varConcat,
   varSwap,
-  viewMemory,
+  viewVariables,
 };

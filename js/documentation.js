@@ -16,7 +16,7 @@ let functions = [
   { name: "sVarUppercase(variable)", desc: "Uppercases all the letters of the string" },
   { name: "varConcat(variable1,variable2)", desc: "Concats 2 string variables and puts the value in the variable1" },
   { name: "varSwap(variable1,variable2)", desc: "Swap 2 variables" },
-  { name: "viewMemory( )", desc: "Outputs all the variables in the memory" },
+  { name: "viewVariables( )", desc: "Outputs all the variables in the memory" },
 ];
 
 let examples = [
