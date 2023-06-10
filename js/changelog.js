@@ -1,5 +1,9 @@
 let changelog = [
   {
+    version: "Version 0.1.0",
+    changes: ["The site is responsive now."],
+  },
+  {
     version: "Version 0.0.4",
     changes: ["Added new function sVarLowercase.", "Added new function sVarUppercase.", "The scrollbar is now hidden."],
   },
