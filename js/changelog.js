@@ -1,5 +1,9 @@
 let changelog = [
   {
+    version: "Version 0.1.2",
+    changes: ["Added new function sVarEqualsTo."],
+  },
+  {
     version: "Version 0.1.1",
     changes: ["Added new function nVarEqualsTo.", "Added new function nVarLessThan.", "Added new function nVarMoreThan.", "Some changes to the changelog page."],
   },
