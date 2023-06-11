@@ -5,7 +5,7 @@ let viewPoints = (code, i) => {
     returnData.data = `\nAn error occured while running the function viewPoints at position ${i + 1}`;
     returnData.jumpTo = code.length + 1;
   };
-  returnData.data = "";
+  returnData.data = "Points:\n";
   if (code[i + 10] == "(" && code[i + 11] == ")" && code[i + 12] == ";") {
     let points = point.getAllPoint();
     let pointsKeys = Object.keys(points);

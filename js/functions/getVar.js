@@ -1,4 +1,4 @@
-import memory from "../memory/variables.js";
+import variables from "../memory/variables.js";
 let validLetters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_";
 let getVar = (code, i) => {
   let returnData = {};
@@ -10,7 +10,7 @@ let getVar = (code, i) => {
     for (let j = i + 8; j < code.length; j++) {
       if (code[j] == ")") {
         let varName = code.slice(i + 7, j);
-        let varValue = memory.getVariable(varName);
+        let varValue = variables.getVariable(varName);
         if (varValue.status == 999) {
           error();
           break;

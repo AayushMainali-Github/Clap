@@ -1,6 +1,6 @@
 let validLetters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_";
 import functions from "../functions.js";
-import memory from "../memory/variables.js";
+import variables from "../memory/variables.js";
 let makeVar = (code, i) => {
   let returnData = {};
   let error = () => {
@@ -15,7 +15,7 @@ let makeVar = (code, i) => {
           for (let k = j + 2; k < code.length; k++) {
             if (code[k] == '"' && code[k + 1] == ")" && code[k + 2] == ";") {
               let varValue = code.slice(j + 2, k);
-              let status = memory.addVariable(varName, varValue);
+              let status = variables.addVariable(varName, varValue);
               if (status == 999) {
                 error();
                 j = code.length + 1;
@@ -33,7 +33,7 @@ let makeVar = (code, i) => {
               if (code[k] == ")" && code[k + 1] == ")" && code[k + 2] == ";") {
                 let varValue = functions.getVar(code, j + 1);
                 if (varValue.data.status && varValue.data.status == 100) {
-                  let status = memory.addVariable(varName, varValue.data.data);
+                  let status = variables.addVariable(varName, varValue.data.data);
                   if (status == 999) {
                     error();
                     j = code.length + 1;
@@ -64,7 +64,7 @@ let makeVar = (code, i) => {
               if (code[k] == ")" && code[k + 1] == ";") {
                 let varValue = code.slice(j + 1, k);
                 try {
-                  let status = memory.addVariable(varName, math.evaluate(varValue));
+                  let status = variables.addVariable(varName, math.evaluate(varValue));
                   if (status == 999) {
                     error();
                     j = code.length + 1;

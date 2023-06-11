@@ -1,5 +1,5 @@
 let validLetters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_";
-import memory from "../memory/variables.js";
+import variables from "../memory/variables.js";
 let sVarUpperCase = (code, i) => {
   let returnData = {};
   let error = () => {
@@ -10,13 +10,13 @@ let sVarUpperCase = (code, i) => {
     for (let j = i + 14; j < code.length; j++) {
       if (code[j] == ")" && code[j + 1] == ";") {
         let varName = code.slice(i + 14, j);
-        let varValue = memory.getVariable(varName);
+        let varValue = variables.getVariable(varName);
         if (varValue.status == 999) {
           error();
           break;
         }
         try {
-          memory.changeVariable(varName, varValue.data.toUpperCase());
+          variables.changeVariable(varName, varValue.data.toUpperCase());
           returnData.data = "";
           returnData.jumpTo = j + 1;
           break;

@@ -1,5 +1,5 @@
 let validLetters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_";
-import memory from "../memory/variables.js";
+import variables from "../memory/variables.js";
 import points from "../memory/points.js";
 
 let gotoIfEquals = (code, i) => {
@@ -20,7 +20,7 @@ let gotoIfEquals = (code, i) => {
         for (let k = j + 1; k < code.length; k++) {
           if (code[k] == ")" && code[k + 1] == ";") {
             let varName = code.slice(j + 1, k);
-            let varValue = memory.getVariable(varName);
+            let varValue = variables.getVariable(varName);
             if (varValue.status == 999) {
               error();
               j = code.length + 1;

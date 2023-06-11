@@ -1,5 +1,5 @@
 let validLetters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_";
-import memory from "../memory/variables.js";
+import variables from "../memory/variables.js";
 let sVarLength = (code, i) => {
   let returnData = {};
   let error = () => {
@@ -10,7 +10,7 @@ let sVarLength = (code, i) => {
     for (let j = i + 11; j < code.length; j++) {
       if (code[j] == ")" && code[j + 1] == ";") {
         let varName = code.slice(i + 11, j);
-        let varValue = memory.getVariable(varName);
+        let varValue = variables.getVariable(varName);
         if (varValue.status == 999) {
           error();
           break;
@@ -20,7 +20,7 @@ let sVarLength = (code, i) => {
           break;
         }
         try {
-          memory.changeVariable(varName, varValue.data.length);
+          variables.changeVariable(varName, varValue.data.length);
           returnData.data = "";
           returnData.jumpTo = j + 1;
           break;
