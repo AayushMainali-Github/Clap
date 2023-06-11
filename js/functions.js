@@ -12,8 +12,8 @@ import nVarSubtract from "./functions/nVarSubtract.js";
 import output from "./functions/output.js";
 import sVarEqualsTo from "./functions/sVarEqualsTo.js";
 import sVarLength from "./functions/sVarLength.js";
-import sVarLowercase from "./functions/sVarLowercase.js";
-import sVarUppercase from "./functions/sVarUppercase.js";
+import sVarLowerCase from "./functions/sVarLowerCase.js";
+import sVarUpperCase from "./functions/sVarUpperCase.js";
 import varConcat from "./functions/varConcat.js";
 import varSwap from "./functions/varSwap.js";
 import viewVariables from "./functions/viewVariables.js";
@@ -33,8 +33,8 @@ export default {
   output,
   sVarEqualsTo,
   sVarLength,
-  sVarLowercase,
-  sVarUppercase,
+  sVarLowerCase,
+  sVarUpperCase,
   varConcat,
   varSwap,
   viewVariables,

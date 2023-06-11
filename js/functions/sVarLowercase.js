@@ -1,9 +1,9 @@
 let validLetters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_";
 import memory from "../memory/variables.js";
-let sVarLowercase = (code, i) => {
+let sVarLowerCase = (code, i) => {
   let returnData = {};
   let error = () => {
-    returnData.data = `\nAn error occured while running the function sVarLowercase at position ${i + 1}`;
+    returnData.data = `\nAn error occured while running the function sVarLowerCase at position ${i + 1}`;
     returnData.jumpTo = code.length + 1;
   };
   if (code[i + 13] == "(" && validLetters.includes(code[i + 14])) {
@@ -34,4 +34,4 @@ let sVarLowercase = (code, i) => {
   return returnData;
 };
 
-export default sVarLowercase;
+export default sVarLowerCase;
