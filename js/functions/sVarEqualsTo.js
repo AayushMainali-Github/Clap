@@ -1,12 +1,13 @@
+let validLetters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_";
 import memory from "../memory/variables.js";
 
 let sVarEqualsTo = (code, i) => {
   let returnData = {};
   let error = () => {
-    returnData.data = "\nAn error occured while running the function sVarEqualsTo.";
+    returnData.data = `\nAn error occured while running the function sVarEqualsTo at position ${i + 1}`;
     returnData.jumpTo = code.length + 1;
   };
-  if (code[i + 12] == "(") {
+  if (code[i + 12] == "(" && validLetters.includes(code[i + 13])) {
     for (let j = i + 13; j < code.length; j++) {
       if (code[j] == ",") {
         let var1name = code.slice(i + 13, j);

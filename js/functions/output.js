@@ -3,7 +3,7 @@ import functions from "../functions.js";
 let output = (code, i) => {
   let returnData = {};
   let error = () => {
-    returnData.data = "\nAn error occured while running the function output.";
+    returnData.data = `\nAn error occured while running the function output at position ${i + 1}`;
     returnData.jumpTo = code.length + 1;
   };
   if (code[i + 6] == "(") {
@@ -43,18 +43,22 @@ let output = (code, i) => {
     }
     //numbers or getVar
     else {
-      for (let j = i + 7; j < code.length; j++) {
-        if (code[j] == ")" && code[j + 1] == ";") {
-          try {
-            returnData.data = math.evaluate(code.slice(i + 7, j));
-            returnData.jumpTo = j + 1;
-            break;
-          } catch (err) {
+      if (i + 7 === code.length) {
+        error();
+      } else {
+        for (let j = i + 7; j < code.length; j++) {
+          if (code[j] == ")" && code[j + 1] == ";") {
+            try {
+              returnData.data = math.evaluate(code.slice(i + 7, j));
+              returnData.jumpTo = j + 1;
+              break;
+            } catch (err) {
+              error();
+              break;
+            }
+          } else {
             error();
-            break;
           }
-        } else {
-          error();
         }
       }
     }

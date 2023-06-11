@@ -2,7 +2,7 @@ import memory from "../memory/variables.js";
 let viewVariables = (code, i) => {
   let returnData = {};
   let error = () => {
-    returnData.data = "\nAn error occured while running the function viewVariables.";
+    returnData.data = `\nAn error occured while running the function viewVariables at position ${i + 1}`;
     returnData.jumpTo = code.length + 1;
   };
   returnData.data = "";

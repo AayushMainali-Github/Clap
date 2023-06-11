@@ -1,12 +1,13 @@
+let validLetters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_";
 import memory from "../memory/variables.js";
 
 let varConcat = (code, i) => {
   let returnData = {};
   let error = () => {
-    returnData.data = "\nAn error occured while running the function varConcat.";
+    returnData.data = `\nAn error occured while running the function varConcat at position ${i + 1}`;
     returnData.jumpTo = code.length + 1;
   };
-  if (code[i + 9] == "(") {
+  if (code[i + 9] == "(" && validLetters.includes(code[i + 10])) {
     for (let j = i + 10; j < code.length; j++) {
       if (code[j] == ",") {
         let var1name = code.slice(i + 10, j);

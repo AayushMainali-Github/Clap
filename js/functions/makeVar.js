@@ -4,11 +4,11 @@ import memory from "../memory/variables.js";
 let makeVar = (code, i) => {
   let returnData = {};
   let error = () => {
-    returnData.data = "\nAn error occured while running the function makeVar.";
+    returnData.data = `\nAn error occured while running the function makeVar at position ${i + 1}`;
     returnData.jumpTo = code.length + 1;
   };
   if (code[i + 7] == "(" && validLetters.includes(code[i + 8])) {
-    for (let j = i + 9; j < code.length; j++) {
+    for (let j = i + 8; j < code.length; j++) {
       if (code[j] == ",") {
         let varName = code.slice(i + 8, j);
         if (code[j + 1] == '"') {
@@ -56,25 +56,30 @@ let makeVar = (code, i) => {
             error();
           }
         } else {
-          for (let k = j + 1; k < code.length; k++) {
-            if (code[k] == ")" && code[k + 1] == ";") {
-              let varValue = code.slice(j + 1, k);
-              try {
-                let status = memory.addVariable(varName, math.evaluate(varValue));
-                if (status == 999) {
+          if (j + 1 == code.length) {
+            error();
+            j = code.length + 1;
+          } else {
+            for (let k = j + 1; k < code.length; k++) {
+              if (code[k] == ")" && code[k + 1] == ";") {
+                let varValue = code.slice(j + 1, k);
+                try {
+                  let status = memory.addVariable(varName, math.evaluate(varValue));
+                  if (status == 999) {
+                    error();
+                    j = code.length + 1;
+                    break;
+                  }
+                } catch (err) {
                   error();
                   j = code.length + 1;
                   break;
                 }
-              } catch (err) {
-                error();
+                returnData.data = "";
+                returnData.jumpTo = k + 1;
                 j = code.length + 1;
                 break;
               }
-              returnData.data = "";
-              returnData.jumpTo = k + 1;
-              j = code.length + 1;
-              break;
             }
           }
         }

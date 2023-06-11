@@ -3,7 +3,7 @@ let validLetters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ12345678
 let getVar = (code, i) => {
   let returnData = {};
   let error = () => {
-    returnData.data = "\nAn error occured while running the function getVar.";
+    returnData.data = `\nAn error occured while running the function getVar at position ${i + 1}`;
     returnData.jumpTo = code.length + 1;
   };
   if (code[i + 6] == "(" && validLetters.includes(code[i + 7])) {
