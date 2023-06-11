@@ -1,12 +1,27 @@
 import functions from "./functions.js";
 import memory from "./memory/variables.js";
+import points from "./memory/points.js";
 let run = () => {
   let startTime = new Date().getTime();
 
   memory.removeAllVariable();
+  points.removeAllPoint();
 
   let code = document.getElementById("codeinp").value;
   let outputData = "";
+
+  for (let i = 0; i < code.length; i++) {
+    let data = {
+      data: "",
+      jumpTo: i,
+    };
+
+    if (code.slice(i, i + 8) == "setPoint") data = functions.setPoint(code, i);
+
+    outputData += data.data;
+    i = data.jumpTo;
+  }
+
   for (let i = 0; i < code.length; i++) {
     let data = {
       data: "",
@@ -15,6 +30,8 @@ let run = () => {
 
     if (code.slice(i, i + 10) == "changeLine") data = functions.changeLine(code, i);
     else if (code.slice(i, i + 4) == "clap") data = functions.clap(code, i);
+    else if (code.slice(i, i + 12) == "gotoIfEquals") data = functions.gotoIfEquals(code, i);
+    else if (code.slice(i, i + 15) == "gotoIfNotEquals") data = functions.gotoIfNotEquals(code, i);
     else if (code.slice(i, i + 7) == "makeVar") data = functions.makeVar(code, i);
     else if (code.slice(i, i + 7) == "nVarAdd") data = functions.nVarAdd(code, i);
     else if (code.slice(i, i + 10) == "nVarDivide") data = functions.nVarDivide(code, i);
@@ -30,6 +47,7 @@ let run = () => {
     else if (code.slice(i, i + 9) == "varConcat") data = functions.varConcat(code, i);
     else if (code.slice(i, i + 10) == "sVarLength") data = functions.sVarLength(code, i);
     else if (code.slice(i, i + 7) == "varSwap") data = functions.varSwap(code, i);
+    else if (code.slice(i, i + 10) == "viewPoints") data = functions.viewPoints(code, i);
     else if (code.slice(i, i + 13) == "viewVariables") data = functions.viewVariables(code, i);
 
     outputData += data.data;

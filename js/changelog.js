@@ -1,5 +1,18 @@
 let changelog = [
   {
+    version: "Version 0.2.0",
+    changes: [
+      "Added new function gotoIfEquals.",
+      "Added new function gotoIfNotEquals.",
+      "Added new function setPoint.",
+      "Added new function viewPoints.",
+      "Fixed a minor bug in varSwap function.",
+      "Fixed a major bug in nVarEqualsTo function.",
+      "Added some more examples to the documentation page.",
+      "Some internal changes on how the programs are processed.",
+    ],
+  },
+  {
     version: "Version 0.1.6",
     changes: ["Changed function sVarLowercase to sVarLowerCase.", "Changed function sVarUppercase to sVarUpperCase."],
   },

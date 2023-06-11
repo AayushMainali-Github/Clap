@@ -16,7 +16,7 @@ let getVariable = (name) => {
   };
 };
 let changeVariable = (name, value) => {
-  if (!variables[name])
+  if (!variables[name] && variables[name] !== 0)
     return {
       status: 999,
       data: "",
