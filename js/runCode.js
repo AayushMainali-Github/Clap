@@ -1,10 +1,10 @@
 import functions from "./functions.js";
-import memory from "./memory/variables.js";
+import variables from "./memory/variables.js";
 import points from "./memory/points.js";
 let run = () => {
   let startTime = new Date().getTime();
 
-  memory.removeAllVariable();
+  variables.removeAllVariable();
   points.removeAllPoint();
 
   let code = document.getElementById("codeinp").value;
@@ -47,6 +47,7 @@ let run = () => {
     else if (code.slice(i, i + 9) == "varConcat") data = functions.varConcat(code, i);
     else if (code.slice(i, i + 10) == "sVarLength") data = functions.sVarLength(code, i);
     else if (code.slice(i, i + 7) == "varSwap") data = functions.varSwap(code, i);
+    else if (code.slice(i, i + 10) == "viewMemory") data = functions.viewMemory(code, i);
     else if (code.slice(i, i + 10) == "viewPoints") data = functions.viewPoints(code, i);
     else if (code.slice(i, i + 13) == "viewVariables") data = functions.viewVariables(code, i);
 

@@ -1,4 +1,4 @@
-import variables from "../memory/variables.js";
+import variable from "../memory/variables.js";
 let viewVariables = (code, i) => {
   let returnData = {};
   let error = () => {
@@ -7,7 +7,7 @@ let viewVariables = (code, i) => {
   };
   returnData.data = "Variables:\n";
   if (code[i + 13] == "(" && code[i + 14] == ")" && code[i + 15] == ";") {
-    let variables = variables.getAllVariable();
+    let variables = variable.getAllVariable();
     let variablesKeys = Object.keys(variables);
     for (let j = 0; j < variablesKeys.length; j++) {
       returnData.data += `${variablesKeys[j]} = ${variables[variablesKeys[j]]}\n`;

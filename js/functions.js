@@ -19,6 +19,7 @@ import sVarLowerCase from "./functions/sVarLowerCase.js";
 import sVarUpperCase from "./functions/sVarUpperCase.js";
 import varConcat from "./functions/varConcat.js";
 import varSwap from "./functions/varSwap.js";
+import viewMemory from "./functions/viewMemory.js";
 import viewPoints from "./functions/viewPoints.js";
 import viewVariables from "./functions/viewVariables.js";
 
@@ -44,6 +45,7 @@ export default {
   sVarUpperCase,
   varConcat,
   varSwap,
+  viewMemory,
   viewPoints,
   viewVariables,
 };
