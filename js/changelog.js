@@ -1,5 +1,9 @@
 let changelog = [
   {
+    version: "Version 0.2.1",
+    changes: ["Some minor internal changes.", "Function viewPoint displays the data abit differently now.", "Function viewVariables displays the data abit differently now."],
+  },
+  {
     version: "Version 0.2.0",
     changes: [
       "Added new function gotoIfEquals.",
