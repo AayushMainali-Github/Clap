@@ -1,5 +1,19 @@
 let changelog = [
   {
+    version: "Version 0.3.0",
+    changes: [
+      "Added new function nVarDate.",
+      "Added new function nVarFull.",
+      "Added new function nVarHour.",
+      "Added new function nVarMinute.",
+      "Added new function nVarMonth.",
+      "Added new function nVarSecond.",
+      "Added new function nVarYear.",
+      "Added some more examples to the documentation page.",
+      "Some minor internal changes.",
+    ],
+  },
+  {
     version: "Version 0.2.2",
     changes: ["Added new function viewMemory.", "Fixed a major bug in viewVariables function.", "Some minor internal changes."],
   },

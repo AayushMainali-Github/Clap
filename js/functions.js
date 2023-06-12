@@ -1,5 +1,12 @@
 import changeLine from "./functions/changeLine.js";
 import clap from "./functions/clap.js";
+import dVarDate from "./functions/dVarDate.js";
+import dVarFull from "./functions/dVarFull.js";
+import dVarHour from "./functions/dVarHour.js";
+import dVarMinute from "./functions/dVarMinute.js";
+import dVarMonth from "./functions/dVarMonth.js";
+import dVarSecond from "./functions/dVarSecond.js";
+import dVarYear from "./functions/dVarYear.js";
 import getVar from "./functions/getVar.js";
 import gotoIfEquals from "./functions/gotoIfEquals.js";
 import gotoIfNotEquals from "./functions/gotoIfNotEquals.js";
@@ -26,6 +33,13 @@ import viewVariables from "./functions/viewVariables.js";
 export default {
   changeLine,
   clap,
+  dVarDate,
+  dVarFull,
+  dVarHour,
+  dVarMinute,
+  dVarMonth,
+  dVarSecond,
+  dVarYear,
   getVar,
   gotoIfEquals,
   gotoIfNotEquals,

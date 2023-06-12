@@ -1,9 +1,9 @@
 let validLetters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_";
 import variables from "../memory/variables.js";
-let sVarLength = (code, i) => {
+let dVarSecond = (code, i) => {
   let returnData = {};
   let error = () => {
-    returnData.data = `\nAn error occured while running the function sVarLength at position ${i + 1}`;
+    returnData.data = `\nAn error occured while running the function dVarSecond at position ${i + 1}`;
     returnData.jumpTo = code.length + 1;
   };
   if (code[i + 10] == "(" && validLetters.includes(code[i + 11])) {
@@ -15,12 +15,8 @@ let sVarLength = (code, i) => {
           error();
           break;
         }
-        if (varValue.data !== varValue.data.toString()) {
-          error();
-          break;
-        }
         try {
-          variables.changeVariable(varName, varValue.data.length);
+          variables.changeVariable(varName, new Date().getSeconds());
           returnData.data = "";
           returnData.jumpTo = j + 1;
           break;
@@ -38,4 +34,4 @@ let sVarLength = (code, i) => {
   return returnData;
 };
 
-export default sVarLength;
+export default dVarSecond;

@@ -30,6 +30,13 @@ let run = () => {
 
     if (code.slice(i, i + 10) == "changeLine") data = functions.changeLine(code, i);
     else if (code.slice(i, i + 4) == "clap") data = functions.clap(code, i);
+    else if (code.slice(i, i + 8) == "dVarDate") data = functions.dVarDate(code, i);
+    else if (code.slice(i, i + 8) == "dVarFull") data = functions.dVarFull(code, i);
+    else if (code.slice(i, i + 8) == "dVarHour") data = functions.dVarHour(code, i);
+    else if (code.slice(i, i + 10) == "dVarMinute") data = functions.dVarMinute(code, i);
+    else if (code.slice(i, i + 9) == "dVarMonth") data = functions.dVarMonth(code, i);
+    else if (code.slice(i, i + 10) == "dVarSecond") data = functions.dVarSecond(code, i);
+    else if (code.slice(i, i + 8) == "dVarYear") data = functions.dVarYear(code, i);
     else if (code.slice(i, i + 12) == "gotoIfEquals") data = functions.gotoIfEquals(code, i);
     else if (code.slice(i, i + 15) == "gotoIfNotEquals") data = functions.gotoIfNotEquals(code, i);
     else if (code.slice(i, i + 7) == "makeVar") data = functions.makeVar(code, i);

@@ -1,6 +1,13 @@
 let functions = [
   { name: "changeLine( )", desc: "Changes the cursor of the output to the next line" },
   { name: "clap( )", desc: "Outputs a clap emoji" },
+  { name: "dVarDate(variable)", desc: "Changes the value of variable to the current date" },
+  { name: "dVarFull(variable)", desc: "Changes the value of variable to the current full date" },
+  { name: "dVarHour(variable)", desc: "Changes the value of variable to the current hour" },
+  { name: "dVarMinute(variable)", desc: "Changes the value of variable to the current minute" },
+  { name: "dVarMonth(variable)", desc: "Changes the value of variable to the current month" },
+  { name: "dVarSecond(variable)", desc: "Changes the value of variable to the current second" },
+  { name: "dVarYear(variable)", desc: "Changes the value of variable to the current year" },
   { name: "getVar(variable)", desc: "Gets the value of the variable" },
   { name: "gotoIfEquals(point,variable)", desc: "Jumps to the given point if the variable is equal to 1" },
   { name: "gotoIfNotEquals(point,variable)", desc: "Jumps to the given point if the variable is not equal to 1" },
@@ -38,6 +45,10 @@ let examples = [
   {
     title: "Checks if the number is positive, negative or neutral",
     code: 'makeVar(inp,0); <--- Input\n\nmakeVar(a,getVar(inp));\nmakeVar(b,getVar(inp));\nmakeVar(c,getVar(inp));\n\nmakeVar(d,0);\n\nnVarMoreThan(a,d);\ngotoIfEquals(p1,a);\n\nnVarLessThan(b,d);\ngotoIfEquals(p2,b);\n\nnVarEqualsTo(c,d);\ngotoIfEquals(p3,c);\n\n\nsetPoint(p1);\noutput("Positive");\ngotoIfNotEquals(endPoint,d);\n\nsetPoint(p2);\noutput("Negative");\ngotoIfNotEquals(endPoint,d);\n\nsetPoint(p3);\noutput("Neutral");\ngotoIfNotEquals(endPoint,d);\n\nsetPoint(endPoint);',
+  },
+  {
+    title: "Outputs the current year",
+    code: "makeVar(year,0);\ndVarYear(year);\noutput(getVar(year));",
   },
 ];
 
