@@ -4,9 +4,11 @@ import dVarDate from "./functions/dVarDate.js";
 import dVarDay from "./functions/dVarDay.js";
 import dVarFull from "./functions/dVarFull.js";
 import dVarHour from "./functions/dVarHour.js";
+import dVarMillisecond from "./functions/dVarMillisecond.js";
 import dVarMinute from "./functions/dVarMinute.js";
 import dVarMonth from "./functions/dVarMonth.js";
 import dVarSecond from "./functions/dVarSecond.js";
+import dVarUnix from "./functions/dVarUnix.js";
 import dVarYear from "./functions/dVarYear.js";
 import getVar from "./functions/getVar.js";
 import gotoIfEquals from "./functions/gotoIfEquals.js";
@@ -38,9 +40,11 @@ export default {
   dVarDay,
   dVarFull,
   dVarHour,
+  dVarMillisecond,
   dVarMinute,
   dVarMonth,
   dVarSecond,
+  dVarUnix,
   dVarYear,
   getVar,
   gotoIfEquals,
