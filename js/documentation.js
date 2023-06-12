@@ -2,6 +2,7 @@ let functions = [
   { name: "changeLine( )", desc: "Changes the cursor of the output to the next line" },
   { name: "clap( )", desc: "Outputs a clap emoji" },
   { name: "dVarDate(variable)", desc: "Changes the value of variable to the current date" },
+  { name: "dVarDay(variable)", desc: "Changes the value of variable to the current day" },
   { name: "dVarFull(variable)", desc: "Changes the value of variable to the current full date" },
   { name: "dVarHour(variable)", desc: "Changes the value of variable to the current hour" },
   { name: "dVarMinute(variable)", desc: "Changes the value of variable to the current minute" },

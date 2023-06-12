@@ -31,6 +31,7 @@ let run = () => {
     if (code.slice(i, i + 10) == "changeLine") data = functions.changeLine(code, i);
     else if (code.slice(i, i + 4) == "clap") data = functions.clap(code, i);
     else if (code.slice(i, i + 8) == "dVarDate") data = functions.dVarDate(code, i);
+    else if (code.slice(i, i + 7) == "dVarDay") data = functions.dVarDay(code, i);
     else if (code.slice(i, i + 8) == "dVarFull") data = functions.dVarFull(code, i);
     else if (code.slice(i, i + 8) == "dVarHour") data = functions.dVarHour(code, i);
     else if (code.slice(i, i + 10) == "dVarMinute") data = functions.dVarMinute(code, i);

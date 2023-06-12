@@ -1,6 +1,7 @@
 import changeLine from "./functions/changeLine.js";
 import clap from "./functions/clap.js";
 import dVarDate from "./functions/dVarDate.js";
+import dVarDay from "./functions/dVarDay.js";
 import dVarFull from "./functions/dVarFull.js";
 import dVarHour from "./functions/dVarHour.js";
 import dVarMinute from "./functions/dVarMinute.js";
@@ -34,6 +35,7 @@ export default {
   changeLine,
   clap,
   dVarDate,
+  dVarDay,
   dVarFull,
   dVarHour,
   dVarMinute,
