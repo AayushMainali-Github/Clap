@@ -38,7 +38,10 @@ let run = () => {
     else if (code.slice(i, i + 10) == "dVarMinute") data = functions.dVarMinute(code, i);
     else if (code.slice(i, i + 9) == "dVarMonth") data = functions.dVarMonth(code, i);
     else if (code.slice(i, i + 10) == "dVarSecond") data = functions.dVarSecond(code, i);
+    else if (code.slice(i, i + 8) == "dVarTime") data = functions.dVarTime(code, i);
     else if (code.slice(i, i + 8) == "dVarUnix") data = functions.dVarUnix(code, i);
+    else if (code.slice(i, i + 11) == "dVarUtcFull") data = functions.dVarUtcFull(code, i);
+    else if (code.slice(i, i + 11) == "dVarUtcTime") data = functions.dVarUtcTime(code, i);
     else if (code.slice(i, i + 8) == "dVarYear") data = functions.dVarYear(code, i);
     else if (code.slice(i, i + 12) == "gotoIfEquals") data = functions.gotoIfEquals(code, i);
     else if (code.slice(i, i + 15) == "gotoIfNotEquals") data = functions.gotoIfNotEquals(code, i);

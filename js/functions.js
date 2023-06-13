@@ -8,7 +8,10 @@ import dVarMillisecond from "./functions/dVarMillisecond.js";
 import dVarMinute from "./functions/dVarMinute.js";
 import dVarMonth from "./functions/dVarMonth.js";
 import dVarSecond from "./functions/dVarSecond.js";
+import dVarTime from "./functions/dVarTime.js";
 import dVarUnix from "./functions/dVarUnix.js";
+import dVarUtcFull from "./functions/dVarUtcFull.js";
+import dVarUtcTime from "./functions/dVarUtcTime.js";
 import dVarYear from "./functions/dVarYear.js";
 import getVar from "./functions/getVar.js";
 import gotoIfEquals from "./functions/gotoIfEquals.js";
@@ -44,7 +47,10 @@ export default {
   dVarMinute,
   dVarMonth,
   dVarSecond,
+  dVarTime,
   dVarUnix,
+  dVarUtcFull,
+  dVarUtcTime,
   dVarYear,
   getVar,
   gotoIfEquals,
