@@ -1,44 +1,59 @@
-import changeLine from "./functions/changeLine.js";
-import clap from "./functions/clap.js";
-import dVarDate from "./functions/dVarDate.js";
-import dVarDay from "./functions/dVarDay.js";
-import dVarFull from "./functions/dVarFull.js";
-import dVarHour from "./functions/dVarHour.js";
-import dVarMillisecond from "./functions/dVarMillisecond.js";
-import dVarMinute from "./functions/dVarMinute.js";
-import dVarMonth from "./functions/dVarMonth.js";
-import dVarSecond from "./functions/dVarSecond.js";
-import dVarTime from "./functions/dVarTime.js";
-import dVarUnix from "./functions/dVarUnix.js";
-import dVarUtcFull from "./functions/dVarUtcFull.js";
-import dVarUtcTime from "./functions/dVarUtcTime.js";
-import dVarYear from "./functions/dVarYear.js";
-import getVar from "./functions/getVar.js";
-import gotoIfEquals from "./functions/gotoIfEquals.js";
-import gotoIfNotEquals from "./functions/gotoIfNotEquals.js";
-import makeVar from "./functions/makeVar.js";
-import nVarAdd from "./functions/nVarAdd.js";
-import nVarDivide from "./functions/nVarDivide.js";
-import nVarEqualsTo from "./functions/nVarEqualsTo.js";
-import nVarLessThan from "./functions/nVarLessThan.js";
-import nVarMoreThan from "./functions/nVarMoreThan.js";
-import nVarMultiply from "./functions/nVarMultiply.js";
-import nVarSubtract from "./functions/nVarSubtract.js";
-import output from "./functions/output.js";
-import setPoint from "./functions/setPoint.js";
-import sVarEqualsTo from "./functions/sVarEqualsTo.js";
-import sVarLength from "./functions/sVarLength.js";
-import sVarLowerCase from "./functions/sVarLowerCase.js";
-import sVarUpperCase from "./functions/sVarUpperCase.js";
-import varConcat from "./functions/varConcat.js";
-import varSwap from "./functions/varSwap.js";
-import viewMemory from "./functions/viewMemory.js";
-import viewPoints from "./functions/viewPoints.js";
-import viewVariables from "./functions/viewVariables.js";
+//date_variables
+//normal
+import dVarDate from "./functions/date_variables/normal/dVarDate.js";
+import dVarDay from "./functions/date_variables/normal/dVarDay.js";
+import dVarFull from "./functions/date_variables/normal/dVarFull.js";
+import dVarHour from "./functions/date_variables/normal/dVarHour.js";
+import dVarMillisecond from "./functions/date_variables/normal/dVarMillisecond.js";
+import dVarMinute from "./functions/date_variables/normal/dVarMinute.js";
+import dVarMonth from "./functions/date_variables/normal/dVarMonth.js";
+import dVarSecond from "./functions/date_variables/normal/dVarSecond.js";
+import dVarTime from "./functions/date_variables/normal/dVarTime.js";
+import dVarUnix from "./functions/date_variables/normal/dVarUnix.js";
+import dVarYear from "./functions/date_variables/normal/dVarYear.js";
+//utc
+import dVarUtcFull from "./functions/date_variables/utc/dVarUtcFull.js";
+import dVarUtcTime from "./functions/date_variables/utc/dVarUtcTime.js";
+
+//goto
+import gotoIfEquals from "./functions/goto/gotoIfEquals.js";
+import gotoIfNotEquals from "./functions/goto/gotoIfNotEquals.js";
+import setPoint from "./functions/goto/setPoint.js";
+
+//memory
+import viewMemory from "./functions/memory/viewMemory.js";
+import viewPoints from "./functions/memory/viewPoints.js";
+import viewVariables from "./functions/memory/viewVariables.js";
+
+//number_variables
+import nVarAdd from "./functions/number_variables/nVarAdd.js";
+import nVarDivide from "./functions/number_variables/nVarDivide.js";
+import nVarEqualsTo from "./functions/number_variables/nVarEqualsTo.js";
+import nVarLessThan from "./functions/number_variables/nVarLessThan.js";
+import nVarMoreThan from "./functions/number_variables/nVarMoreThan.js";
+import nVarMultiply from "./functions/number_variables/nVarMultiply.js";
+import nVarSubtract from "./functions/number_variables/nVarSubtract.js";
+
+//others
+import changeLine from "./functions/others/changeLine.js";
+import clap from "./functions/others/clap.js";
+import output from "./functions/others/output.js";
+
+//string_variables
+import sVarEqualsTo from "./functions/string_variables/sVarEqualsTo.js";
+import sVarLength from "./functions/string_variables/sVarLength.js";
+import sVarLowerCase from "./functions/string_variables/sVarLowerCase.js";
+import sVarUpperCase from "./functions/string_variables/sVarUpperCase.js";
+
+//variables
+import getVar from "./functions/variables/getVar.js";
+import makeVar from "./functions/variables/makeVar.js";
+import varConcat from "./functions/variables/varConcat.js";
+import varSwap from "./functions/variables/varSwap.js";
 
 export default {
-  changeLine,
-  clap,
+  //date_variables
+  //normal
   dVarDate,
   dVarDay,
   dVarFull,
@@ -49,13 +64,22 @@ export default {
   dVarSecond,
   dVarTime,
   dVarUnix,
+  dVarYear,
+  //utc
   dVarUtcFull,
   dVarUtcTime,
-  dVarYear,
-  getVar,
+
+  //goto
   gotoIfEquals,
   gotoIfNotEquals,
-  makeVar,
+  setPoint,
+
+  //memory
+  viewMemory,
+  viewPoints,
+  viewVariables,
+
+  //number_variables
   nVarAdd,
   nVarDivide,
   nVarEqualsTo,
@@ -63,15 +87,21 @@ export default {
   nVarMoreThan,
   nVarMultiply,
   nVarSubtract,
+
+  //others
+  changeLine,
+  clap,
   output,
-  setPoint,
+
+  //string_variables
   sVarEqualsTo,
   sVarLength,
   sVarLowerCase,
   sVarUpperCase,
+
+  //variables
+  getVar,
+  makeVar,
   varConcat,
   varSwap,
-  viewMemory,
-  viewPoints,
-  viewVariables,
 };
