@@ -12,8 +12,12 @@ import dVarTime from "./functions/date_variables/normal/dVarTime.js";
 import dVarUnix from "./functions/date_variables/normal/dVarUnix.js";
 import dVarYear from "./functions/date_variables/normal/dVarYear.js";
 //utc
+import dVarUtcDate from "./functions/date_variables/utc/dVarUtcDate.js";
+import dVarUtcDay from "./functions/date_variables/utc/dVarUtcDay.js";
 import dVarUtcFull from "./functions/date_variables/utc/dVarUtcFull.js";
+import dVarUtcMonth from "./functions/date_variables/utc/dVarUtcMonth.js";
 import dVarUtcTime from "./functions/date_variables/utc/dVarUtcTime.js";
+import dVarUtcYear from "./functions/date_variables/utc/dVarUtcYear.js";
 
 //goto
 import gotoIfEquals from "./functions/goto/gotoIfEquals.js";
@@ -66,8 +70,12 @@ export default {
   dVarUnix,
   dVarYear,
   //utc
+  dVarUtcDate,
+  dVarUtcDay,
   dVarUtcFull,
+  dVarUtcMonth,
   dVarUtcTime,
+  dVarUtcYear,
 
   //goto
   gotoIfEquals,

@@ -41,8 +41,12 @@ let run = () => {
     else if (code.slice(i, i + 8) == "dVarUnix") data = functions.dVarUnix(code, i);
     else if (code.slice(i, i + 8) == "dVarYear") data = functions.dVarYear(code, i);
     //date_variables_utc
+    else if (code.slice(i, i + 11) == "dVarUtcDate") data = functions.dVarUtcDate(code, i);
+    else if (code.slice(i, i + 10) == "dVarUtcDay") data = functions.dVarUtcDay(code, i);
     else if (code.slice(i, i + 11) == "dVarUtcFull") data = functions.dVarUtcFull(code, i);
+    else if (code.slice(i, i + 12) == "dVarUtcMonth") data = functions.dVarUtcMonth(code, i);
     else if (code.slice(i, i + 11) == "dVarUtcTime") data = functions.dVarUtcTime(code, i);
+    else if (code.slice(i, i + 11) == "dVarUtcYear") data = functions.dVarUtcYear(code, i);
     //goto
     else if (code.slice(i, i + 12) == "gotoIfEquals") data = functions.gotoIfEquals(code, i);
     else if (code.slice(i, i + 15) == "gotoIfNotEquals") data = functions.gotoIfNotEquals(code, i);
