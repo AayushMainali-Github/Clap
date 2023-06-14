@@ -44,7 +44,10 @@ let run = () => {
     else if (code.slice(i, i + 11) == "dVarUtcDate") data = functions.dVarUtcDate(code, i);
     else if (code.slice(i, i + 10) == "dVarUtcDay") data = functions.dVarUtcDay(code, i);
     else if (code.slice(i, i + 11) == "dVarUtcFull") data = functions.dVarUtcFull(code, i);
+    else if (code.slice(i, i + 11) == "dVarUtcHour") data = functions.dVarUtcHour(code, i);
+    else if (code.slice(i, i + 13) == "dVarUtcMinute") data = functions.dVarUtcMinute(code, i);
     else if (code.slice(i, i + 12) == "dVarUtcMonth") data = functions.dVarUtcMonth(code, i);
+    else if (code.slice(i, i + 13) == "dVarUtcSecond") data = functions.dVarUtcSecond(code, i);
     else if (code.slice(i, i + 11) == "dVarUtcTime") data = functions.dVarUtcTime(code, i);
     else if (code.slice(i, i + 11) == "dVarUtcYear") data = functions.dVarUtcYear(code, i);
     //goto

@@ -15,7 +15,10 @@ import dVarYear from "./functions/date_variables/normal/dVarYear.js";
 import dVarUtcDate from "./functions/date_variables/utc/dVarUtcDate.js";
 import dVarUtcDay from "./functions/date_variables/utc/dVarUtcDay.js";
 import dVarUtcFull from "./functions/date_variables/utc/dVarUtcFull.js";
+import dVarUtcHour from "./functions/date_variables/utc/dVarUtcHour.js";
+import dVarUtcMinute from "./functions/date_variables/utc/dVarUtcMinute.js";
 import dVarUtcMonth from "./functions/date_variables/utc/dVarUtcMonth.js";
+import dVarUtcSecond from "./functions/date_variables/utc/dVarUtcSecond.js";
 import dVarUtcTime from "./functions/date_variables/utc/dVarUtcTime.js";
 import dVarUtcYear from "./functions/date_variables/utc/dVarUtcYear.js";
 
@@ -73,7 +76,10 @@ export default {
   dVarUtcDate,
   dVarUtcDay,
   dVarUtcFull,
+  dVarUtcHour,
+  dVarUtcMinute,
   dVarUtcMonth,
+  dVarUtcSecond,
   dVarUtcTime,
   dVarUtcYear,
 
