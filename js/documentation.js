@@ -35,6 +35,8 @@ let functions = [
   { name: "output(value)", desc: "Outputs any value inside" },
   { name: "setPoint(point)", desc: "Sets a point to use in goto functions" },
   { name: "sVarEqualsTo(variable1,variable2)", desc: "If two string variables are equal then variable1's value is set to 1 else variable1's value is set to 0" },
+  { name: "sVarFirst(variable)", desc: "Changes the value of variable to its first character" },
+  { name: "sVarLast(variable)", desc: "Changes the value of variable to its last character" },
   { name: "sVarLength(variable)", desc: "Changes the value of variable to its length" },
   { name: "sVarLowerCase(variable)", desc: "Lowercases all the letters of the string" },
   { name: "sVarUpperCase(variable)", desc: "Uppercases all the letters of the string" },

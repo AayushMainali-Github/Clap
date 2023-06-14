@@ -48,6 +48,8 @@ import output from "./functions/others/output.js";
 
 //string_variables
 import sVarEqualsTo from "./functions/string_variables/sVarEqualsTo.js";
+import sVarFirst from "./functions/string_variables/sVarFirst.js";
+import sVarLast from "./functions/string_variables/sVarLast.js";
 import sVarLength from "./functions/string_variables/sVarLength.js";
 import sVarLowerCase from "./functions/string_variables/sVarLowerCase.js";
 import sVarUpperCase from "./functions/string_variables/sVarUpperCase.js";
@@ -109,6 +111,8 @@ export default {
 
   //string_variables
   sVarEqualsTo,
+  sVarFirst,
+  sVarLast,
   sVarLength,
   sVarLowerCase,
   sVarUpperCase,
