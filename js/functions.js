@@ -52,6 +52,7 @@ import sVarFirst from "./functions/string_variables/sVarFirst.js";
 import sVarLast from "./functions/string_variables/sVarLast.js";
 import sVarLength from "./functions/string_variables/sVarLength.js";
 import sVarLowerCase from "./functions/string_variables/sVarLowerCase.js";
+import sVarRepeat from "./functions/string_variables/sVarRepeat.js";
 import sVarUpperCase from "./functions/string_variables/sVarUpperCase.js";
 
 //variables
@@ -115,6 +116,7 @@ export default {
   sVarLast,
   sVarLength,
   sVarLowerCase,
+  sVarRepeat,
   sVarUpperCase,
 
   //variables

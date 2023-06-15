@@ -1,5 +1,9 @@
 let changelog = [
   {
+    version: "Version 0.4.4",
+    changes: ["Added new function sVarRepeat."],
+  },
+  {
     version: "Version 0.4.3",
     changes: ["Added new function sVarFirst.", "Added new function sVarLast."],
   },

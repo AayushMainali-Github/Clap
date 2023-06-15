@@ -75,6 +75,7 @@ let run = () => {
     else if (code.slice(i, i + 8) == "sVarLast") data = functions.sVarLast(code, i);
     else if (code.slice(i, i + 10) == "sVarLength") data = functions.sVarLength(code, i);
     else if (code.slice(i, i + 13) == "sVarLowerCase") data = functions.sVarLowerCase(code, i);
+    else if (code.slice(i, i + 10) == "sVarRepeat") data = functions.sVarRepeat(code, i);
     else if (code.slice(i, i + 13) == "sVarUpperCase") data = functions.sVarUpperCase(code, i);
     //variables
     else if (code.slice(i, i + 7) == "makeVar") data = functions.makeVar(code, i);

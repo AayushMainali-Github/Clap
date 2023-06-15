@@ -39,6 +39,7 @@ let functions = [
   { name: "sVarLast(variable)", desc: "Changes the value of variable to its last character" },
   { name: "sVarLength(variable)", desc: "Changes the value of variable to its length" },
   { name: "sVarLowerCase(variable)", desc: "Lowercases all the letters of the string" },
+  { name: "sVarRepeat(variable)", desc: "Doubles the value of the string" },
   { name: "sVarUpperCase(variable)", desc: "Uppercases all the letters of the string" },
   { name: "varConcat(variable1,variable2)", desc: "Concats 2 string variables and puts the value in the variable1" },
   { name: "varSwap(variable1,variable2)", desc: "Swap 2 variables" },
