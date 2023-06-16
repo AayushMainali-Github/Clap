@@ -34,8 +34,10 @@ import viewVariables from "./functions/memory/viewVariables.js";
 
 //number_variables
 import nVarAdd from "./functions/number_variables/nVarAdd.js";
+import nVarDecimal from "./functions/number_variables/nVarDecimal.js";
 import nVarDivide from "./functions/number_variables/nVarDivide.js";
 import nVarEqualsTo from "./functions/number_variables/nVarEqualsTo.js";
+import nVarInteger from "./functions/number_variables/nVarInteger.js";
 import nVarLessThan from "./functions/number_variables/nVarLessThan.js";
 import nVarMoreThan from "./functions/number_variables/nVarMoreThan.js";
 import nVarMultiply from "./functions/number_variables/nVarMultiply.js";
@@ -98,8 +100,10 @@ export default {
 
   //number_variables
   nVarAdd,
+  nVarDecimal,
   nVarDivide,
   nVarEqualsTo,
+  nVarInteger,
   nVarLessThan,
   nVarMoreThan,
   nVarMultiply,

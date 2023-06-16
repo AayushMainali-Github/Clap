@@ -59,8 +59,10 @@ let run = () => {
     else if (code.slice(i, i + 13) == "viewVariables") data = functions.viewVariables(code, i);
     //number_variables
     else if (code.slice(i, i + 7) == "nVarAdd") data = functions.nVarAdd(code, i);
+    else if (code.slice(i, i + 11) == "nVarDecimal") data = functions.nVarDecimal(code, i);
     else if (code.slice(i, i + 10) == "nVarDivide") data = functions.nVarDivide(code, i);
     else if (code.slice(i, i + 12) == "nVarEqualsTo") data = functions.nVarEqualsTo(code, i);
+    else if (code.slice(i, i + 11) == "nVarInteger") data = functions.nVarInteger(code, i);
     else if (code.slice(i, i + 12) == "nVarLessThan") data = functions.nVarLessThan(code, i);
     else if (code.slice(i, i + 12) == "nVarMoreThan") data = functions.nVarMoreThan(code, i);
     else if (code.slice(i, i + 12) == "nVarMultiply") data = functions.nVarMultiply(code, i);
