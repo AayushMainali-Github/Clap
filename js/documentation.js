@@ -1,53 +1,93 @@
 let functions = [
-  { name: "changeLine( )", desc: "Changes the cursor of the output to the next line" },
-  { name: "clap( )", desc: "Outputs a clap emoji" },
-  { name: "dVarDate(variable)", desc: "Changes the value of variable to the current date" },
-  { name: "dVarDay(variable)", desc: "Changes the value of variable to the current day" },
-  { name: "dVarFull(variable)", desc: "Changes the value of variable to the current full date and time" },
-  { name: "dVarHour(variable)", desc: "Changes the value of variable to the current hour" },
-  { name: "dVarMillisecond(variable)", desc: "Changes the value of variable to the current millisecond" },
-  { name: "dVarMinute(variable)", desc: "Changes the value of variable to the current minute" },
-  { name: "dVarMonth(variable)", desc: "Changes the value of variable to the current month" },
-  { name: "dVarSecond(variable)", desc: "Changes the value of variable to the current second" },
-  { name: "dVarTime(variable)", desc: "Changes the value of variable to the current time" },
-  { name: "dVarUnix(variable)", desc: "Changes the value of variable to the current unix time stamp" },
-  { name: "dVarUtcDate(variable)", desc: "Changes the value of variable to the current UTC date" },
-  { name: "dVarUtcDay(variable)", desc: "Changes the value of variable to the current UTC day" },
-  { name: "dVarUtcFull(variable)", desc: "Changes the value of variable to the current UTC full date and time" },
-  { name: "dVarUtcHour(variable)", desc: "Changes the value of variable to the current UTC hour" },
-  { name: "dVarUtcMinute(variable)", desc: "Changes the value of variable to the current UTC minute" },
-  { name: "dVarUtcMonth(variable)", desc: "Changes the value of variable to the current UTC month" },
-  { name: "dVarUtcSecond(variable)", desc: "Changes the value of variable to the current UTC second" },
-  { name: "dVarUtcTime(variable)", desc: "Changes the value of variable to the current UTC time" },
-  { name: "dVarUtcYear(variable)", desc: "Changes the value of variable to the current UTC year" },
-  { name: "dVarYear(variable)", desc: "Changes the value of variable to the current year" },
-  { name: "getVar(variable)", desc: "Gets the value of the variable" },
-  { name: "gotoIfEquals(point,variable)", desc: "Jumps to the given point if the variable is equal to 1" },
-  { name: "gotoIfNotEquals(point,variable)", desc: "Jumps to the given point if the variable is not equal to 1" },
-  { name: "makeVar(variable,value)", desc: "Creates a variable on the memory and puts a value on it" },
-  { name: "nVarAdd(variable1,variable2)", desc: "Add 2 numerical variables and puts the value in the variable1" },
-  { name: "nVarDecimal(variable1)", desc: "Changes the value of variable to its decimal part" },
-  { name: "nVarDivide(variable1,variable2)", desc: "Divide 2 numerical variables and puts the value in the variable1" },
-  { name: "nVarEqualsTo(variable1,variable2)", desc: "If two numerical variables are equal then variable1's value is set to 1 else variable1's value is set to 0" },
-  { name: "nVarInteger(variable1)", desc: "Changes the value of variable to its integer part" },
-  { name: "nVarLessThan(variable1,variable2)", desc: "If variable1 is less than variable2 then variable1's value is set to 1 else variable1's value is set to 0" },
-  { name: "nVarMoreThan(variable1,variable2)", desc: "If variable1 is more than variable2 then variable1's value is set to 1 else variable1's value is set to 0" },
-  { name: "nVarMultiply(variable1,variable2)", desc: "Multiply 2 numerical variables and puts the value in the variable1" },
-  { name: "nVarSubtract(variable1,variable2)", desc: "Subtract 2 numerical variables and puts the value in the variable1" },
-  { name: "output(value)", desc: "Outputs any value inside" },
-  { name: "setPoint(point)", desc: "Sets a point to use in goto functions" },
-  { name: "sVarEqualsTo(variable1,variable2)", desc: "If two string variables are equal then variable1's value is set to 1 else variable1's value is set to 0" },
-  { name: "sVarFirst(variable)", desc: "Changes the value of variable to its first character" },
-  { name: "sVarLast(variable)", desc: "Changes the value of variable to its last character" },
-  { name: "sVarLength(variable)", desc: "Changes the value of variable to its length" },
-  { name: "sVarLowerCase(variable)", desc: "Lowercases all the letters of the string" },
-  { name: "sVarRepeat(variable)", desc: "Doubles the value of the string" },
-  { name: "sVarUpperCase(variable)", desc: "Uppercases all the letters of the string" },
-  { name: "varConcat(variable1,variable2)", desc: "Concats 2 string variables and puts the value in the variable1" },
-  { name: "varSwap(variable1,variable2)", desc: "Swap 2 variables" },
-  { name: "viewMemory( )", desc: "Outputs all the data in the memory" },
-  { name: "viewPoints( )", desc: "Outputs all the points in the memory" },
-  { name: "viewVariables( )", desc: "Outputs all the variables in the memory" },
+  {
+    type: "Output Functions",
+    functions: [
+      { name: "changeLine( )", desc: "Changes the cursor of the output to the next line" },
+      { name: "clap( )", desc: "Outputs a clap emoji" },
+      { name: "output(value)", desc: "Outputs any value inside" },
+    ],
+  },
+  {
+    type: "Variables Functions",
+    functions: [
+      { name: "getVar(variable)", desc: "Gets the value of the variable" },
+      { name: "makeVar(variable,value)", desc: "Creates a variable on the memory and puts a value on it" },
+      { name: "varConcat(variable1,variable2)", desc: "Concats 2 string variables and puts the value in the variable1" },
+      { name: "varSwap(variable1,variable2)", desc: "Swap 2 variables" },
+    ],
+  },
+  {
+    type: "Number Functions",
+    functions: [
+      { name: "nVarAdd(variable1,variable2)", desc: "Add 2 numerical variables and puts the value in the variable1" },
+      { name: "nVarDecimal(variable1)", desc: "Changes the value of variable to its decimal part" },
+      { name: "nVarDivide(variable1,variable2)", desc: "Divide 2 numerical variables and puts the value in the variable1" },
+      { name: "nVarEqualsTo(variable1,variable2)", desc: "If two numerical variables are equal then variable1's value is set to 1 else variable1's value is set to 0" },
+      { name: "nVarInteger(variable1)", desc: "Changes the value of variable to its integer part" },
+      { name: "nVarLessThan(variable1,variable2)", desc: "If variable1 is less than variable2 then variable1's value is set to 1 else variable1's value is set to 0" },
+      { name: "nVarMoreThan(variable1,variable2)", desc: "If variable1 is more than variable2 then variable1's value is set to 1 else variable1's value is set to 0" },
+      { name: "nVarMultiply(variable1,variable2)", desc: "Multiply 2 numerical variables and puts the value in the variable1" },
+      { name: "nVarSubtract(variable1,variable2)", desc: "Subtract 2 numerical variables and puts the value in the variable1" },
+    ],
+  },
+  {
+    type: "String Functions",
+    functions: [
+      { name: "sVarEqualsTo(variable1,variable2)", desc: "If two string variables are equal then variable1's value is set to 1 else variable1's value is set to 0" },
+      { name: "sVarFirst(variable)", desc: "Changes the value of variable to its first character" },
+      { name: "sVarLast(variable)", desc: "Changes the value of variable to its last character" },
+      { name: "sVarLength(variable)", desc: "Changes the value of variable to its length" },
+      { name: "sVarLowerCase(variable)", desc: "Lowercases all the letters of the string" },
+      { name: "sVarRepeat(variable)", desc: "Doubles the value of the string" },
+      { name: "sVarUpperCase(variable)", desc: "Uppercases all the letters of the string" },
+    ],
+  },
+  {
+    type: "Goto Functions",
+    functions: [
+      { name: "gotoIfEquals(point,variable)", desc: "Jumps to the given point if the variable is equal to 1" },
+      { name: "gotoIfNotEquals(point,variable)", desc: "Jumps to the given point if the variable is not equal to 1" },
+      { name: "setPoint(point)", desc: "Sets a point to use in goto functions" },
+    ],
+  },
+  {
+    type: "Memory Functions",
+    functions: [
+      { name: "viewMemory( )", desc: "Outputs all the data in the memory" },
+      { name: "viewPoints( )", desc: "Outputs all the points in the memory" },
+      { name: "viewVariables( )", desc: "Outputs all the variables in the memory" },
+    ],
+  },
+  {
+    type: "Normal Date Functions",
+    functions: [
+      { name: "dVarDate(variable)", desc: "Changes the value of variable to the current date" },
+      { name: "dVarDay(variable)", desc: "Changes the value of variable to the current day" },
+      { name: "dVarFull(variable)", desc: "Changes the value of variable to the current full date and time" },
+      { name: "dVarHour(variable)", desc: "Changes the value of variable to the current hour" },
+      { name: "dVarMillisecond(variable)", desc: "Changes the value of variable to the current millisecond" },
+      { name: "dVarMinute(variable)", desc: "Changes the value of variable to the current minute" },
+      { name: "dVarMonth(variable)", desc: "Changes the value of variable to the current month" },
+      { name: "dVarSecond(variable)", desc: "Changes the value of variable to the current second" },
+      { name: "dVarTime(variable)", desc: "Changes the value of variable to the current time" },
+      { name: "dVarUnix(variable)", desc: "Changes the value of variable to the current unix time stamp" },
+      { name: "dVarYear(variable)", desc: "Changes the value of variable to the current year" },
+    ],
+  },
+  {
+    type: "UTC Date Functions",
+    functions: [
+      { name: "dVarUtcDate(variable)", desc: "Changes the value of variable to the current UTC date" },
+      { name: "dVarUtcDay(variable)", desc: "Changes the value of variable to the current UTC day" },
+      { name: "dVarUtcFull(variable)", desc: "Changes the value of variable to the current UTC full date and time" },
+      { name: "dVarUtcHour(variable)", desc: "Changes the value of variable to the current UTC hour" },
+      { name: "dVarUtcMinute(variable)", desc: "Changes the value of variable to the current UTC minute" },
+      { name: "dVarUtcMonth(variable)", desc: "Changes the value of variable to the current UTC month" },
+      { name: "dVarUtcSecond(variable)", desc: "Changes the value of variable to the current UTC second" },
+      { name: "dVarUtcTime(variable)", desc: "Changes the value of variable to the current UTC time" },
+      { name: "dVarUtcYear(variable)", desc: "Changes the value of variable to the current UTC year" },
+    ],
+  },
 ];
 
 let examples = [
@@ -72,7 +112,14 @@ let examples = [
 
 let funcHTML = "";
 for (let i = 0; i < functions.length; i++) {
-  funcHTML += `<tr ><th class="fncnames">${functions[i].name}</th> <td>${functions[i].desc}</td></tr>`;
+  funcHTML += `
+  <div id="funcHead">${functions[i].type}:</div>
+  <table>
+  `;
+  for (let j = 0; j < functions[i].functions.length; j++) {
+    funcHTML += `<tr ><th class="fncnames">${functions[i].functions[j].name}</th> <td>${functions[i].functions[j].desc}</td></tr>`;
+  }
+  funcHTML += `</table>`;
 }
 
 document.getElementById("functions").innerHTML = funcHTML;

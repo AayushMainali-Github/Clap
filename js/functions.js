@@ -43,10 +43,10 @@ import nVarMoreThan from "./functions/number_variables/nVarMoreThan.js";
 import nVarMultiply from "./functions/number_variables/nVarMultiply.js";
 import nVarSubtract from "./functions/number_variables/nVarSubtract.js";
 
-//others
-import changeLine from "./functions/others/changeLine.js";
-import clap from "./functions/others/clap.js";
-import output from "./functions/others/output.js";
+//output
+import changeLine from "./functions/output/changeLine.js";
+import clap from "./functions/output/clap.js";
+import output from "./functions/output/output.js";
 
 //string_variables
 import sVarEqualsTo from "./functions/string_variables/sVarEqualsTo.js";
@@ -109,7 +109,7 @@ export default {
   nVarMultiply,
   nVarSubtract,
 
-  //others
+  //output
   changeLine,
   clap,
   output,

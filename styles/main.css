@@ -79,6 +79,17 @@ textarea {
   font-weight: bold;
   color: rgb(101, 255, 152);
 }
+#functions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 30px;
+}
+#funcHead {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(101, 255, 152);
+}
 table {
   table-layout: fixed;
   border-collapse: collapse;
@@ -87,11 +98,11 @@ td,
 th {
   border: 1px solid rgb(101, 255, 152);
   padding: 10px 15px;
+  font-size: 18px;
 }
 
 .fncnames {
   text-align: left;
-  color: rgb(101, 255, 152);
 }
 #examples {
   display: flex;
@@ -144,7 +155,7 @@ li {
   }
   td,
   th {
-    border: 1px solid white;
+    border: 1px solid rgb(101, 255, 152);
     padding: 5px;
     font-size: 12px;
   }

@@ -1,5 +1,9 @@
 let changelog = [
   {
+    version: "Version 0.5.0",
+    changes: ["Completely changed the documentation page.", "Minor change in the folder structure.", "Changed some CSS in the documentation page."],
+  },
+  {
     version: "Version 0.4.5",
     changes: ["Added new function nVarDecimal.", "Added new function nVarInteger."],
   },
