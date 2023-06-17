@@ -1,0 +1,16 @@
+[
+  { "title": "Outputs Hello World", "code": "output(\"Hello World\");" },
+  { "title": "Creates 2 variables and outputs it", "code": "makeVar(a,\"Hello\");\nmakeVar(b,\"World\");\noutput(getVar(a));\nchangeLine();\noutput(getVar(b));" },
+  { "title": "Adds two variables and displays it", "code": "makeVar(a,7);\nmakeVar(b,9);\nnVarAdd(a,b);\noutput(getVar(a));" },
+  { "title": "Concats two variables and displays it", "code": "makeVar(a,\"Hello\");\nmakeVar(b,\"World\");\nvarConcat(a,b);\noutput(getVar(a));" },
+  { "title": "Outputs the length of a string variable", "code": "makeVar(a,\"Hello World\");\nsVarLength(a);\noutput(getVar(a));" },
+  {
+    "title": "Outputs Hello World 5 times",
+    "code": "makeVar(a,6);\nmakeVar(decrement,1);\nsetPoint(p1);\noutput(\"Hello World\");\nchangeLine();\nnVarSubtract(a,decrement);\ngotoIfNotEquals(p1,a);"
+  },
+  {
+    "title": "Checks if the number is positive, negative or neutral",
+    "code": "makeVar(inp,0); <--- Input\n\nmakeVar(a,getVar(inp));\nmakeVar(b,getVar(inp));\nmakeVar(c,getVar(inp));\n\nmakeVar(d,0);\n\nnVarMoreThan(a,d);\ngotoIfEquals(p1,a);\n\nnVarLessThan(b,d);\ngotoIfEquals(p2,b);\n\nnVarEqualsTo(c,d);\ngotoIfEquals(p3,c);\n\n\nsetPoint(p1);\noutput(\"Positive\");\ngotoIfNotEquals(endPoint,d);\n\nsetPoint(p2);\noutput(\"Negative\");\ngotoIfNotEquals(endPoint,d);\n\nsetPoint(p3);\noutput(\"Neutral\");\ngotoIfNotEquals(endPoint,d);\n\nsetPoint(endPoint);"
+  },
+  { "title": "Outputs the current year", "code": "makeVar(year,0);\ndVarYear(year);\noutput(getVar(year));" }
+]
