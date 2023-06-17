@@ -1,0 +1,26 @@
+#changelog {
+  display: none;
+  flex-direction: column;
+  margin: 30px 70px;
+  gap: 50px;
+  align-items: flex-start;
+}
+.chngVer {
+  margin-bottom: 10px;
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(101, 255, 152);
+}
+
+li {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 700px) {
+  .chngVer {
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(101, 255, 152);
+  }
+}

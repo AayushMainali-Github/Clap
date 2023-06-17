@@ -1,0 +1,71 @@
+#documentation {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 30px;
+  gap: 20px;
+}
+#docsHead {
+  font-size: 35px;
+  font-weight: bold;
+  color: rgb(101, 255, 152);
+}
+#functions {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 30px;
+}
+#funcHead {
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(101, 255, 152);
+}
+table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+td,
+th {
+  border: 1px solid rgb(101, 255, 152);
+  padding: 10px 15px;
+  font-size: 18px;
+}
+
+.fncnames {
+  text-align: left;
+}
+#examples {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+b {
+  color: rgb(101, 255, 152);
+  font-size: 18px;
+}
+.codeDes {
+  font-family: Consolas, "courier new";
+  color: rgb(248, 248, 248);
+  background-color: #3d3939;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 700px) {
+  #docsHead {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(101, 255, 152);
+  }
+  td,
+  th {
+    border: 1px solid rgb(101, 255, 152);
+    padding: 5px;
+    font-size: 12px;
+  }
+  b {
+    color: rgb(101, 255, 152);
+    font-size: 14px;
+  }
+}
