@@ -16,7 +16,7 @@ let dVarUtcMonth = (code, i) => {
           break;
         }
         try {
-          variables.changeVariable(varName, new Date().getUTCMonth());
+          variables.changeVariable(varName, new Date().getUTCMonth() + 1);
           returnData.data = "";
           returnData.jumpTo = j + 1;
           break;

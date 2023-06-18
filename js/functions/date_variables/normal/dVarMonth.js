@@ -16,7 +16,7 @@ let dVarMonth = (code, i) => {
           break;
         }
         try {
-          variables.changeVariable(varName, new Date().getMonth());
+          variables.changeVariable(varName, new Date().getMonth() + 1);
           returnData.data = "";
           returnData.jumpTo = j + 1;
           break;
