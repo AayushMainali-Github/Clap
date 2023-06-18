@@ -27,6 +27,7 @@
       { "name": "nVarLessThan(variable1,variable2)", "desc": "If variable1 is less than variable2 then variable1's value is set to 1 else variable1's value is set to 0" },
       { "name": "nVarMoreThan(variable1,variable2)", "desc": "If variable1 is more than variable2 then variable1's value is set to 1 else variable1's value is set to 0" },
       { "name": "nVarMultiply(variable1,variable2)", "desc": "Multiply 2 numerical variables and puts the value in the variable1" },
+      { "name": "nVarPower(variable1,variable2)", "desc": "Changes to value of variable1 to the power variable2" },
       { "name": "nVarSubtract(variable1,variable2)", "desc": "Subtract 2 numerical variables and puts the value in the variable1" }
     ]
   },

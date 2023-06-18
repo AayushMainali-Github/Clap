@@ -66,6 +66,7 @@ let run = () => {
     else if (code.slice(i, i + 12) == "nVarLessThan") data = functions.nVarLessThan(code, i);
     else if (code.slice(i, i + 12) == "nVarMoreThan") data = functions.nVarMoreThan(code, i);
     else if (code.slice(i, i + 12) == "nVarMultiply") data = functions.nVarMultiply(code, i);
+    else if (code.slice(i, i + 9) == "nVarPower") data = functions.nVarPower(code, i);
     else if (code.slice(i, i + 12) == "nVarSubtract") data = functions.nVarSubtract(code, i);
     //others
     else if (code.slice(i, i + 10) == "changeLine") data = functions.changeLine(code, i);
