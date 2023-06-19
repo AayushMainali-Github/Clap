@@ -35,6 +35,7 @@ let run = () => {
     else if (code.slice(i, i + 8) == "dVarHour") data = functions.dVarHour(code, i);
     else if (code.slice(i, i + 15) == "dVarMillisecond") data = functions.dVarMillisecond(code, i);
     else if (code.slice(i, i + 10) == "dVarMinute") data = functions.dVarMinute(code, i);
+    else if (code.slice(i, i + 13) == "dVarMonthName") data = functions.dVarMonthName(code, i);
     else if (code.slice(i, i + 9) == "dVarMonth") data = functions.dVarMonth(code, i);
     else if (code.slice(i, i + 10) == "dVarSecond") data = functions.dVarSecond(code, i);
     else if (code.slice(i, i + 8) == "dVarTime") data = functions.dVarTime(code, i);
@@ -46,6 +47,7 @@ let run = () => {
     else if (code.slice(i, i + 11) == "dVarUtcFull") data = functions.dVarUtcFull(code, i);
     else if (code.slice(i, i + 11) == "dVarUtcHour") data = functions.dVarUtcHour(code, i);
     else if (code.slice(i, i + 13) == "dVarUtcMinute") data = functions.dVarUtcMinute(code, i);
+    else if (code.slice(i, i + 16) == "dVarUtcMonthName") data = functions.dVarUtcMonthName(code, i);
     else if (code.slice(i, i + 12) == "dVarUtcMonth") data = functions.dVarUtcMonth(code, i);
     else if (code.slice(i, i + 13) == "dVarUtcSecond") data = functions.dVarUtcSecond(code, i);
     else if (code.slice(i, i + 11) == "dVarUtcTime") data = functions.dVarUtcTime(code, i);

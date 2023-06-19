@@ -69,6 +69,7 @@
       { "name": "dVarMillisecond(variable)", "desc": "Changes the value of variable to the current millisecond" },
       { "name": "dVarMinute(variable)", "desc": "Changes the value of variable to the current minute" },
       { "name": "dVarMonth(variable)", "desc": "Changes the value of variable to the current month" },
+      { "name": "dVarMonthName(variable)", "desc": "Changes the value of variable to the current month name" },
       { "name": "dVarSecond(variable)", "desc": "Changes the value of variable to the current second" },
       { "name": "dVarTime(variable)", "desc": "Changes the value of variable to the current time" },
       { "name": "dVarUnix(variable)", "desc": "Changes the value of variable to the current unix time stamp" },
@@ -84,6 +85,7 @@
       { "name": "dVarUtcHour(variable)", "desc": "Changes the value of variable to the current UTC hour" },
       { "name": "dVarUtcMinute(variable)", "desc": "Changes the value of variable to the current UTC minute" },
       { "name": "dVarUtcMonth(variable)", "desc": "Changes the value of variable to the current UTC month" },
+      { "name": "dVarUtcMonthName(variable)", "desc": "Changes the value of variable to the current UTC month name" },
       { "name": "dVarUtcSecond(variable)", "desc": "Changes the value of variable to the current UTC second" },
       { "name": "dVarUtcTime(variable)", "desc": "Changes the value of variable to the current UTC time" },
       { "name": "dVarUtcYear(variable)", "desc": "Changes the value of variable to the current UTC year" }
