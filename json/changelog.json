@@ -1,4 +1,5 @@
 [
+  { "version": "Version 0.5.6", "changes": ["Added new function nVarQuotient.", "Added new function nVarRemainder."] },
   { "version": "Version 0.5.5", "changes": ["Added new function dVarMonthName.", "Added new function dVarUtcMonthName."] },
   { "version": "Version 0.5.4", "changes": ["Fixed a major bug in dVarMonth.", "Fixed a major bug in dVarUtcMonth"] },
   { "version": "Version 0.5.3", "changes": ["Added new function nVarPower."] },

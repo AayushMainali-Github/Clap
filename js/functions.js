@@ -44,6 +44,8 @@ import nVarLessThan from "./functions/number_variables/nVarLessThan.js";
 import nVarMoreThan from "./functions/number_variables/nVarMoreThan.js";
 import nVarMultiply from "./functions/number_variables/nVarMultiply.js";
 import nVarPower from "./functions/number_variables/nVarPower.js";
+import nVarQuotient from "./functions/number_variables/nVarQuotient.js";
+import nVarRemainder from "./functions/number_variables/nVarRemainder.js";
 import nVarSubtract from "./functions/number_variables/nVarSubtract.js";
 
 //output
@@ -113,6 +115,8 @@ export default {
   nVarMoreThan,
   nVarMultiply,
   nVarPower,
+  nVarQuotient,
+  nVarRemainder,
   nVarSubtract,
 
   //output
