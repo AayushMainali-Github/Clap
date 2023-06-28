@@ -3,7 +3,7 @@
   { "title": "Creates 2 variables and outputs it", "code": "makeVar(a,\"Hello\");\nmakeVar(b,\"World\");\noutput(getVar(a));\nchangeLine();\noutput(getVar(b));" },
   { "title": "Adds two variables and displays it", "code": "makeVar(a,7);\nmakeVar(b,9);\nnVarAdd(a,b);\noutput(getVar(a));" },
   { "title": "Concats two variables and displays it", "code": "makeVar(a,\"Hello\");\nmakeVar(b,\"World\");\nvarConcat(a,b);\noutput(getVar(a));" },
-  { "title": "Outputs the length of a string variable", "code": "makeVar(a,\"Hello World\");\nsVarLength(a);\noutput(getVar(a));" },
+  { "title": "Outputs the length of a variable", "code": "makeVar(a,\"Hello World\");\nvarLength(a);\noutput(getVar(a));" },
   {
     "title": "Outputs Hello World 5 times",
     "code": "makeVar(a,6);\nmakeVar(decrement,1);\nsetPoint(p1);\noutput(\"Hello World\");\nchangeLine();\nnVarSubtract(a,decrement);\ngotoIfNotEquals(p1,a);"

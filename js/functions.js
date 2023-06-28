@@ -57,7 +57,6 @@ import output from "./functions/output/output.js";
 import sVarEqualsTo from "./functions/string_variables/sVarEqualsTo.js";
 import sVarFirst from "./functions/string_variables/sVarFirst.js";
 import sVarLast from "./functions/string_variables/sVarLast.js";
-import sVarLength from "./functions/string_variables/sVarLength.js";
 import sVarLowerCase from "./functions/string_variables/sVarLowerCase.js";
 import sVarRepeat from "./functions/string_variables/sVarRepeat.js";
 import sVarUpperCase from "./functions/string_variables/sVarUpperCase.js";
@@ -66,6 +65,7 @@ import sVarUpperCase from "./functions/string_variables/sVarUpperCase.js";
 import getVar from "./functions/variables/getVar.js";
 import makeVar from "./functions/variables/makeVar.js";
 import varConcat from "./functions/variables/varConcat.js";
+import varLength from "./functions/variables/varLength.js";
 import varSwap from "./functions/variables/varSwap.js";
 
 export default {
@@ -128,7 +128,6 @@ export default {
   sVarEqualsTo,
   sVarFirst,
   sVarLast,
-  sVarLength,
   sVarLowerCase,
   sVarRepeat,
   sVarUpperCase,
@@ -137,5 +136,6 @@ export default {
   getVar,
   makeVar,
   varConcat,
+  varLength,
   varSwap,
 };

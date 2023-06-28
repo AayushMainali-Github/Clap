@@ -80,13 +80,13 @@ let run = () => {
     else if (code.slice(i, i + 12) == "sVarEqualsTo") data = functions.sVarEqualsTo(code, i);
     else if (code.slice(i, i + 9) == "sVarFirst") data = functions.sVarFirst(code, i);
     else if (code.slice(i, i + 8) == "sVarLast") data = functions.sVarLast(code, i);
-    else if (code.slice(i, i + 10) == "sVarLength") data = functions.sVarLength(code, i);
     else if (code.slice(i, i + 13) == "sVarLowerCase") data = functions.sVarLowerCase(code, i);
     else if (code.slice(i, i + 10) == "sVarRepeat") data = functions.sVarRepeat(code, i);
     else if (code.slice(i, i + 13) == "sVarUpperCase") data = functions.sVarUpperCase(code, i);
     //variables
     else if (code.slice(i, i + 7) == "makeVar") data = functions.makeVar(code, i);
     else if (code.slice(i, i + 9) == "varConcat") data = functions.varConcat(code, i);
+    else if (code.slice(i, i + 9) == "varLength") data = functions.varLength(code, i);
     else if (code.slice(i, i + 7) == "varSwap") data = functions.varSwap(code, i);
 
     outputData += data.data;

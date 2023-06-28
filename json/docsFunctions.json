@@ -13,6 +13,7 @@
       { "name": "getVar(variable)", "desc": "Gets the value of the variable" },
       { "name": "makeVar(variable,value)", "desc": "Creates a variable on the memory and puts a value on it" },
       { "name": "varConcat(variable1,variable2)", "desc": "Concats 2 string variables and puts the value in the variable1" },
+      { "name": "varLength(variable)", "desc": "Changes the value of variable to its length" },
       { "name": "varSwap(variable1,variable2)", "desc": "Swap 2 variables" }
     ]
   },
@@ -39,7 +40,6 @@
       { "name": "sVarEqualsTo(variable1,variable2)", "desc": "If two string variables are equal then variable1's value is set to 1 else variable1's value is set to 0" },
       { "name": "sVarFirst(variable)", "desc": "Changes the value of variable to its first character" },
       { "name": "sVarLast(variable)", "desc": "Changes the value of variable to its last character" },
-      { "name": "sVarLength(variable)", "desc": "Changes the value of variable to its length" },
       { "name": "sVarLowerCase(variable)", "desc": "Lowercases all the letters of the string" },
       { "name": "sVarRepeat(variable)", "desc": "Doubles the value of the string" },
       { "name": "sVarUpperCase(variable)", "desc": "Uppercases all the letters of the string" }
